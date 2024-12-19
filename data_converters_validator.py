@@ -6,7 +6,7 @@ from tb_rest_client.rest_client_pe import RestClientPE
 import re
 
 ENDPOINT = "https://tbqa.cloud"
-USERNAME = "artemka"
+USERNAME = "artemka@thingsboard.io"
 PASSWORD = "24051978"
 
 client = RestClientPE(base_url=ENDPOINT)
