@@ -5,9 +5,9 @@ import time
 from tb_rest_client.rest_client_pe import RestClientPE
 import re
 
-ENDPOINT = "https://tbqa.cloud"
-USERNAME = "artemka@thingsboard.io"
-PASSWORD = "24051978"
+ENDPOINT = os.getenv("ENDPOINT")
+USERNAME = os.getenv("USERNAME")
+PASSWORD = os.getenv("PASSWORD")
 
 client = RestClientPE(base_url=ENDPOINT)
 client.login(username=USERNAME, password=PASSWORD)
